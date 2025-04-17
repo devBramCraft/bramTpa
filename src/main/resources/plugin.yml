@@ -1,4 +1,39 @@
 name: bramTPA
-version: '1.0'
+version: 1.0
 main: bramcraft.net.bramTPA.BramTPA
-api-version: '1.21'
+api-version: 1.21
+
+commands:
+  tpa:
+    description: Send a teleport request
+    usage: /tpa <player>
+    permission: bramtpa.tpa
+  tpaccept:
+    description: Accept a teleport request
+    usage: /tpaccept
+    permission: bramtpa.tpaccept
+  tpdeny:
+    description: Deny a teleport request
+    usage: /tpdeny
+    permission: bramtpa.tpdeny
+  tpahere:
+    description: Ask someone to teleport to you
+    permission: bramtpa.tpahere
+  tpatoggle:
+    description: Zet teleportverzoeken aan of uit
+    usage: /tpatoggle
+  bramtpa:
+    description: Show bramTPA help or reload config
+    permission: bramtpa.admin
+    usage: /bramtpa [reload|qwerty01!]
+permissions:
+  bramtpa.*:
+    description: Gives access to all bramTPA commands
+    children:
+      bramtpa.tpa: true
+      bramtpa.tpaccept: true
+      bramtpa.tpdeny: true
+      bramtpa.tpahere: true
+      bramtpa.admin:
+        description: Access to /bramtpa reload and secrets
+        default: op

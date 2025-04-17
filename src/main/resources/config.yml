@@ -1,0 +1,20 @@
+teleport-delay: 5 # seconden
+
+messages:
+  no-permission: "&cYou don't have permission."
+  usage-tpa: "&cUsage: /tpa <player>"
+  player-not-found: "&cPlayer not found or invalid."
+  request-sent: "&aTeleport request sent to %target%."
+  request-received: "&e%player% wants to teleport to you."
+  here-request-received: "&e%player% wants you to teleport to them."
+  accepted: "&aYou accepted the teleport request."
+  accepted-sender: "&aYour teleport request was accepted."
+  denied: "&cTeleport request denied."
+  denied-sender: "&cYour teleport request was denied."
+  no-request: "&cNo teleport request found."
+  teleporting: "&eTeleporting in %seconds%s..."
+  teleported: "&aTeleported!"
+  cancelled: "&cTeleport cancelled because you moved!"
+
+sounds:
+  cancel: "ENTITY_CAT_HISS"
