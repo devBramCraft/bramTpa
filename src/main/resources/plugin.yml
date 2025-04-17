@@ -1,0 +1,4 @@
+name: bramTPA
+version: '1.0'
+main: bramcraft.net.bramTPA.BramTPA
+api-version: '1.21'
